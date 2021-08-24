@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #08F5E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+button{
+      bottom: 50px;
+      left: 50px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+}
+.setting-btn {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.setting{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1CCEBE;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+
+}
+.setting.hide{
+    transform: translateY(-100%);
+}
+select{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #08F5E0;
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+}
+.game-container{
+    background-color: #15A497;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.time{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.score{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+.game-container input{
+    padding: 5px;
+    border-radius: 4px;
+    width: 300px;
+}
+.game-over{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0B524C;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: wheat;
+}
+
